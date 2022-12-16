@@ -1,18 +1,18 @@
-﻿$Prefix = ".95_"
+$Prefix = ".xx_"
 $VMName = "Odin"
-$Path = "C:\Users\eeyudot\_VM"
+$Path = "<Path>"
 $CPU = 2
 $Mem = 2048MB
 $Size = 64GB
 $OS = "ubuntu-22.04.1-live-server-amd64.iso"
 
 $VM = @{
-	VMName = $VMName
-	Path = $Path
+    VMName = $VMName
+    Path = $Path
     Version = "10.0"
-	Generation = 2
-	MemoryStartupBytes = $Mem
-	SwitchName = "External"
+    Generation = 2
+    MemoryStartupBytes = $Mem
+    SwitchName = "External"
     NewVHDPath = "$Path\$VMName\Virtual Hard Disks\$VMName.vhdx"
     NewVHDSizeBytes = $Size
 }
@@ -27,7 +27,7 @@ Add-VMDvdDrive @CD
 $FW = @{
     VMName = $VMName
     EnableSecureBoot = "Off"
-	BootOrder = (Get-VMFirmware $VMName).BootOrder[2], #DVD
+    BootOrder = (Get-VMFirmware $VMName).BootOrder[2], #DVD
                 (Get-VMFirmware $VMName).BootOrder[1], #HDD
                 (Get-VMFirmware $VMName).BootOrder[0]  #PXE
 }
