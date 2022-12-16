@@ -1,6 +1,8 @@
 $Prefix = ".xx_"
 $VMName = "Odin"
 $Path = "<Path>"
+$Hori = 2560
+$Vert = 1440
 $CPU = 2
 $Mem = 2048MB
 $Size = 64GB
@@ -35,8 +37,8 @@ Set-VMFirmware @FW
 
 $VID = @{
     VMName = $VMName
-    HorizontalResolution = 2560
-    VerticalResolution = 1440
+    HorizontalResolution = $Hori
+    VerticalResolution = $Vert
     ResolutionType = "Single"
 }
 Set-VMVideo @VID
