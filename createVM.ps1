@@ -1,6 +1,7 @@
 $Prefix = ".xx_"
 $VMName = "Odin"
-$Path = "<Path>"
+$User = "xxx"
+$Path = "C:\Users\$User\_VM"
 $Hori = 2560
 $Vert = 1440
 $CPU = 2
