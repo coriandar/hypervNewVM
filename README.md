@@ -24,6 +24,10 @@
         Option "PreferredMode" "2560x1440"
     EndSection
 
+## Google Chrome
+    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    sudo apt install ./google-chrome-stable_current_amd64.deb
+    
 ## Nvim
     https://neovim.io/doc/user/quickref.html#option-list
     ~/.config/nvim
