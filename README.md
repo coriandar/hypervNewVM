@@ -1,4 +1,5 @@
 ## UbuntuServer
+    sudo apt update -y && sudo apt upgrade -y
     sudo apt install -y git neofetch xorg i3 cifs-utils ncdu
     sudo timedatectl set-timezone Pacific/Auckland
 
