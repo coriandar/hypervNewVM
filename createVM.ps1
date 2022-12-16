@@ -37,7 +37,7 @@ $VID = @{
     VMName = $VMName
     HorizontalResolution = 2560
     VerticalResolution = 1440
-    ResolutionType = "Maximum"
+    ResolutionType = "Single"
 }
 Set-VMVideo @VID
 
