@@ -1,6 +1,6 @@
 ## UbuntuServer
     sudo apt update -y && sudo apt upgrade -y
-    sudo apt install -y git neofetch xorg i3 cifs-utils ncdu
+    sudo apt install -y git neofetch xorg i3 cifs-utils ncdu curl
     sudo timedatectl set-timezone Pacific/Auckland
 
     192.168.1.0/24
@@ -24,9 +24,11 @@
         Option "PreferredMode" "2560x1440"
     EndSection
 
-## Google Chrome
-    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-    sudo apt install -y ./google-chrome-stable_current_amd64.deb
+## Brave
+    sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+    echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+    sudo apt update
+    sudo apt install brave-browser
     
 ## Nvim
     https://neovim.io/doc/user/quickref.html#option-list
