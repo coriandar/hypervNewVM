@@ -79,3 +79,45 @@ sudo systemctl daemon-reload
 sudo systemctl enable rxtxoff.service
 sudo systemctl start rxtxoff.service
 ```
+
+## God Mode
+```
+Folder rename-> GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}
+```
+
+## Firefox
+```
+about:config
+    media.hardwaremediakeys.enabled
+```
+
+## Bluetooth Fix
+```
+Device manager > Bluetooth > View > By connection
+USB Root Hub > Power management
+```
+
+## Recycle Bin
+```
+Set limit = 100000
+```
+
+## Disable
+```
+gpedit > Admin > Search
+gpedit > Admin > Win Com > Onedrive
+Sticky keys
+Power > Hybrid Sleep
+Power > Fast startup
+```
+
+## Active Hours
+```
+0900 - 0300
+```
+
+## Creative Cloud
+```
+Computer\HKEY_CLASSES_ROOT\CLSID\{0E270DAA-1BE6-48F2-AC49-D2F8C812D790}
+    System.IsPinnedToNameSpaceTree > 0
+```
