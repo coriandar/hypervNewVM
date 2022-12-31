@@ -94,7 +94,7 @@ about:config
 ## Bluetooth Fix
 ```
 Device manager > Bluetooth > View > By connection
-USB Root Hub > Power management
+USB Root Hub > Power management > OFF
 ```
 
 ## Recycle Bin
@@ -104,11 +104,14 @@ Set limit = 100000
 
 ## Disable
 ```
-gpedit > Admin > Search
+gpedit > Admin > Win Com > Search
 gpedit > Admin > Win Com > Onedrive
-Sticky keys
 Power > Hybrid Sleep
 Power > Fast startup
+Apps > Advanced app settings > Archive apps > OFF
+Apps > Optional feature > WordPad
+Apps > Optional feature > Window Media Player Legacy
+Sticky keys > OFF
 ```
 
 ## Active Hours
