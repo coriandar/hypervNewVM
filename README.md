@@ -45,10 +45,9 @@ https://neovim.io/doc/user/quickref.html#option-list
 :Ex
 ```
 
-## Plex
+## Netbeans jVi
 ```
-cp /usr/lib/plexmediaserver/Resources/Plug-ins-*/WebClient.bundle/Contents/Resources/js/main-*
-    secondsleft:1
+jVi Config->Buffer Modifications->backspace->2
 ```
 
 ## Eclipse
@@ -58,6 +57,11 @@ usr/share/applications
 Exec=/usr/share/eclipse/eclipse
 ```
 
+## Plex
+```
+cp /usr/lib/plexmediaserver/Resources/Plug-ins-*/WebClient.bundle/Contents/Resources/js/main-*
+    secondsleft:1
+```
 ## External Wifi Fix
 ```
 vEthernet > 192.168.1.xx
