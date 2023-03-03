@@ -45,9 +45,14 @@ https://neovim.io/doc/user/quickref.html#option-list
 :Ex
 ```
 
-## Netbeans jVi
+## Netbeans
 ```
 jVi Config->Buffer Modifications->backspace->2
+Editor > Java >
+    - Auto Popup Trigger
+    - Subword completionpick
+    - Spaces indent = 4
+    - Tab size: 4
 ```
 
 ## Eclipse
